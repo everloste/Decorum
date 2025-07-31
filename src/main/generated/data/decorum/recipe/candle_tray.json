@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "multi_bench",
+  "key": {
+    "c": "minecraft:chain",
+    "i": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "ici",
+    " i "
+  ],
+  "result": {
+    "count": 1,
+    "id": "decorum:candle_tray"
+  }
+}

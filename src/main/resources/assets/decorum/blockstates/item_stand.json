@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "decorum:block/item_stand"
+    },
+    "facing=south": {
+      "model": "decorum:block/item_stand",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "decorum:block/item_stand",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "decorum:block/item_stand",
+      "y": 270
+    }
+  }
+}

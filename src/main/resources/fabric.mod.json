@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "decorum",
+  "version": "${version}",
+  "name": "Decorum (indev)",
+  "description": "A lightweight and stylistically grounded decoration mod. (development version)",
+  "authors": [
+    "bebebea_loste"
+  ],
+  "contact": {
+    "homepage": "https://github.com/everloste",
+    "issues": "https://github.com/everloste/PandaPlushies/issues",
+    "sources": "https://github.com/everloste/PandaPlushies"
+  },
+  "license": "MIT",
+  "icon": "assets/decorum/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.bebebea_loste.decorum.client.DecorumDataGenerator"
+    ],
+    "client": [
+      "dev.bebebea_loste.decorum.client.DecorumClient"
+    ],
+    "main": [
+      "dev.bebebea_loste.decorum.Mod"
+    ]
+  },
+  "mixins": [
+    "decorum.mixins.json",
+    {
+      "config": "decorum.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

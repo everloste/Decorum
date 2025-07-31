@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "decorum:item/bamboo_flower_pot"
+  }
+}

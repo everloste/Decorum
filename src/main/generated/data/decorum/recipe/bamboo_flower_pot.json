@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "multi_bench",
+  "key": {
+    "b": "minecraft:bamboo"
+  },
+  "pattern": [
+    "b b",
+    " b "
+  ],
+  "result": {
+    "count": 1,
+    "id": "decorum:bamboo_flower_pot"
+  }
+}
