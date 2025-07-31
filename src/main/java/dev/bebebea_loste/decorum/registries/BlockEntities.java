@@ -26,7 +26,7 @@ public class BlockEntities {
 			"candle_tray",
 			FabricBlockEntityTypeBuilder.create(CandleTrayBlockEntity::new, Blocks.CANDLE_TRAY).build()
 	);
-	public static final BlockEntityType<ItemStandBlockEntity> ITEM_DISPLAY = register(
+	public static final BlockEntityType<ItemStandBlockEntity> ITEM_STAND = register(
 			"item_display",
 			FabricBlockEntityTypeBuilder.create(ItemStandBlockEntity::new, Blocks.ITEM_STAND).build()
 	);

@@ -7,6 +7,6 @@ import dev.bebebea_loste.decorum.registries.BlockEntities;
 
 public class ItemStandBlockEntity extends SingleStackBlockEntity {
     public ItemStandBlockEntity(BlockPos pos, BlockState state) {
-        super(BlockEntities.ITEM_DISPLAY, pos, state);
+        super(BlockEntities.ITEM_STAND, pos, state);
     }
 }
