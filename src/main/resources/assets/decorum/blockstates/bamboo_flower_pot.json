@@ -8,6 +8,21 @@
     },
     "type=big": {
       "model": "decorum:block/bamboo_flower_pot/big"
+    },
+    "type=cactus": {
+      "model": "decorum:block/bamboo_flower_pot/cactus"
+    },
+    "type=bamboo": {
+      "model": "decorum:block/bamboo_flower_pot/bamboo"
+    },
+    "type=azalea": {
+      "model": "decorum:block/bamboo_flower_pot/azalea"
+    },
+    "type=flowering_azalea": {
+      "model": "decorum:block/bamboo_flower_pot/flowering_azalea"
+    },
+    "type=mangrove_propagule": {
+      "model": "decorum:block/bamboo_flower_pot/mangrove_propagule"
     }
   }
 }
