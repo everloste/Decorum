@@ -23,7 +23,7 @@ import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
 public class BambooFlowerPot extends BlockWithEntity {
-	private static final VoxelShape SHAPE = Block.createColumnShape(6.0F, 0.0F, 6.0F);
+	private static final VoxelShape SHAPE = Block.createColumnShape(8.0F, 0.0F, 5.0F);
 
 	public static final EnumProperty<FlowerPotState> FLOWER_POT_TYPE = EnumProperty.of("type", FlowerPotState.class);
 
@@ -46,8 +46,8 @@ public class BambooFlowerPot extends BlockWithEntity {
 	}
 
 	protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-		if (state.get(FLOWER_POT_TYPE) == FlowerPotState.MEDIUM) {
-			return Block.createColumnShape(8f, 0f, 5f);
+		if (state.get(FLOWER_POT_TYPE) == FlowerPotState.SMALL) {
+			return Block.createColumnShape(6f, 0f, 6f);
 		}
 		else if (state.get(FLOWER_POT_TYPE) == FlowerPotState.BIG) {
 			return Block.createColumnShape(10f, 0f, 5f);
@@ -65,7 +65,15 @@ public class BambooFlowerPot extends BlockWithEntity {
 		if (blockEntity instanceof FlowerPotBlockEntity) {
 			ItemStack blockStack = blockEntity.getStack();
 
-			if (blockStack.isEmpty() && (playerStack.isIn(ItemTags.SMALL_FLOWERS) || playerStack.isIn(ItemTags.SAPLINGS) || playerStack.isOf(Items.FERN))) {
+			if (blockStack.isEmpty() && (playerStack.isIn(ItemTags.SMALL_FLOWERS)
+					|| playerStack.isIn(ItemTags.SAPLINGS)
+					|| playerStack.isOf(Items.FERN)
+					|| playerStack.isOf(Items.BAMBOO)
+					|| playerStack.isOf(Items.CACTUS)
+					|| playerStack.isOf(Items.MANGROVE_PROPAGULE)
+					|| playerStack.isOf(Items.RED_MUSHROOM)
+					|| playerStack.isOf(Items.BROWN_MUSHROOM)
+			)) {
 				// Set item
 				ItemStack newStack = playerStack.copy();
 				newStack.setCount(1);
@@ -78,6 +86,22 @@ public class BambooFlowerPot extends BlockWithEntity {
 				}
 				else if (newStack.isOf(Items.FERN)) {
 					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.MEDIUM));
+				}
+				else if (newStack.isOf(Items.BAMBOO)) {
+					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.BAMBOO));
+				}
+				else if (newStack.isOf(Items.CACTUS)) {
+					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.CACTUS));
+				}
+				else if (newStack.isOf(Items.MANGROVE_PROPAGULE)) {
+					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.MANGROVE_PROPAGULE));
+				}
+				
+				if (newStack.isOf(Items.AZALEA)) {
+					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.AZALEA));
+				}
+				else if (newStack.isOf(Items.FLOWERING_AZALEA)) {
+					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.FLOWERING_AZALEA));
 				}
 
 				// Done
