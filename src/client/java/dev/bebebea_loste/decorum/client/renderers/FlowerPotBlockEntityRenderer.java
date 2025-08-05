@@ -50,7 +50,7 @@ public class FlowerPotBlockEntityRenderer implements BlockEntityRenderer<FlowerP
 								matrices,
 								vertexConsumers.getBuffer(RenderLayer.getCutout()),
 								true,
-								0
+								overlay
 						);
 						matrices.pop();
 					}
