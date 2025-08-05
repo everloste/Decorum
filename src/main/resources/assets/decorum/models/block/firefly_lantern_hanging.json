@@ -3,7 +3,8 @@
 	"credit": "Made by bebebea_loste with Blockbench",
 	"textures": {
 		"0": "decorum:block/firefly_lantern",
-		"particle": "decorum:block/firefly_lantern"
+		"particle": "decorum:block/firefly_lantern",
+		"candle": "block/candle_lit"
 	},
 	"elements": [
 		{
@@ -139,6 +140,37 @@
 				"north": {"uv": [14, 1, 11, 5], "texture": "#0"},
 				"south": {"uv": [11, 1, 14, 5], "texture": "#0"}
 			}
+		},
+		{
+			"from": [7, 2, 7],
+			"to": [9, 4, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, 0]},
+			"faces": {
+				"north": {"uv": [0, 8, 2, 10], "texture": "#candle"},
+				"east": {"uv": [0, 8, 2, 10], "texture": "#candle"},
+				"south": {"uv": [0, 8, 2, 10], "texture": "#candle"},
+				"west": {"uv": [0, 8, 2, 10], "texture": "#candle"},
+				"up": {"uv": [0, 6, 2, 8], "texture": "#candle"},
+				"down": {"uv": [0, 14, 2, 16], "texture": "#candle", "cullface": "down"}
+			}
+		},
+		{
+			"from": [7.5, 4, 8],
+			"to": [8.5, 5, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 4, 8]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 6], "texture": "#candle"},
+				"south": {"uv": [0, 5, 1, 6], "texture": "#candle"}
+			}
+		},
+		{
+			"from": [7.5, 4, 8],
+			"to": [8.5, 5, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 4, 8]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 6], "texture": "#candle"},
+				"south": {"uv": [0, 5, 1, 6], "texture": "#candle"}
+			}
 		}
 	],
 	"groups": [
@@ -163,6 +195,12 @@
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [11, 12]
+		},
+		{
+			"name": "candle",
+			"origin": [0, -3, 0],
+			"color": 0,
+			"children": [13, 14, 15]
 		}
 	]
 }

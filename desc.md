@@ -39,7 +39,7 @@ Inspiration taken from the resource pack [Fresh Flower Pots](https://modrinth.co
 Implementation progress: work in progress
 
 ### Firefly Lantern
-A lantern that creates firefly particles in and around it.
+A lantern that attracts fireflies.
 
 Implementation progress: Prototype
 
