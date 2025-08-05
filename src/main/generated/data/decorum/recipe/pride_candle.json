@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "multi_bench",
+  "ingredients": [
+    "minecraft:candle",
+    "minecraft:red_dye",
+    "minecraft:yellow_dye",
+    "minecraft:blue_dye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "decorum:pride_candle"
+  }
+}

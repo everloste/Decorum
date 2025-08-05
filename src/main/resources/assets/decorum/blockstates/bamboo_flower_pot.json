@@ -1,10 +1,13 @@
 {
   "variants": {
-    "type=regular": {
+    "type=small": {
       "model": "decorum:block/bamboo_flower_pot"
     },
-    "type=wide": {
-      "model": "decorum:block/bamboo_flower_pot_wide"
+    "type=medium": {
+      "model": "decorum:block/bamboo_flower_pot_medium"
+    },
+    "type=big": {
+      "model": "decorum:block/bamboo_flower_pot_big"
     }
   }
 }

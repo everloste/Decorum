@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "mounted=false": {
+      "model": "decorum:block/torch_holder"
+    },
+    "mounted=true,facing=north": {
+      "model": "decorum:block/torch_holder_mounted"
+    },
+    "mounted=true,facing=east": {
+      "model": "decorum:block/torch_holder_mounted",
+      "y": 90
+    },
+    "mounted=true,facing=south": {
+      "model": "decorum:block/torch_holder_mounted",
+      "y": 180
+    },
+    "mounted=true,facing=west": {
+      "model": "decorum:block/torch_holder_mounted",
+      "y": 270
+    }
+  }
+}

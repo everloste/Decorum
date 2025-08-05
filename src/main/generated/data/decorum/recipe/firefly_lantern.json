@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "multi_bench",
+  "key": {
+    "c": "minecraft:firefly_bush",
+    "i": "minecraft:iron_nugget"
+  },
+  "pattern": [
+    "iii",
+    "ici",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "decorum:firefly_lantern"
+  }
+}

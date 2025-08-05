@@ -4,7 +4,7 @@
   "group": "multi_bench",
   "key": {
     "c": "minecraft:chain",
-    "i": "minecraft:iron_ingot"
+    "i": "minecraft:iron_nugget"
   },
   "pattern": [
     "ici",

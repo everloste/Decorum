@@ -1,4 +1,6 @@
 // 1.21.5	-999999999-01-01T00:00:00	Decorum (indev)/Block Loot Tables
 3e706d2f5583acdacc1b80f66745395d83a29220 data/decorum/loot_table/blocks/bamboo_flower_pot.json
-3c45759e3e10b4093fbc842c58e250957e37ba89 data/decorum/loot_table/blocks/candle_tray.json
+21bc46c3cda0165e76552fd033fd47d589b9580f data/decorum/loot_table/blocks/candle_holder.json
+e59ddcf2825a43459507719b45bde926211f43db data/decorum/loot_table/blocks/firefly_lantern.json
 8923cfbb35f9bc61afee15722ac691d25b1ab6b0 data/decorum/loot_table/blocks/item_stand.json
+90367d792bd692748437009b85617c73bf135961 data/decorum/loot_table/blocks/torch_holder.json

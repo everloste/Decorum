@@ -3,8 +3,9 @@ package dev.bebebea_loste.decorum.content.properties;
 import net.minecraft.util.StringIdentifiable;
 
 public enum FlowerPotState implements StringIdentifiable {
-	REGULAR("regular"),
-	WIDE("wide");
+	SMALL("small"),
+	MEDIUM("medium"),
+	BIG("big");
 
 	private final String id;
 

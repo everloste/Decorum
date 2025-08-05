@@ -20,8 +20,8 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(Blocks.BAMBOO_FLOWER_POT.asItem(), Models.GENERATED);
-        itemModelGenerator.register(Blocks.CANDLE_TRAY.asItem(), Models.GENERATED);
-        itemModelGenerator.register(Blocks.ITEM_STAND.asItem(), Models.GENERATED);
+        for (int i = 0; i < Blocks.BLOCKS.size(); i++) {
+            itemModelGenerator.register(Blocks.BLOCKS.get(i).asItem(), Models.GENERATED);
+        }
     }
 }

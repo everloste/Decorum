@@ -1,0 +1,184 @@
+{
+  "variants": {
+    "state=standing,candle_slots=1,facing=north": {
+      "model": "decorum:block/candle_holder/standing/1_candle"
+    },
+    "state=standing,candle_slots=1,facing=east": {
+      "model": "decorum:block/candle_holder/standing/1_candle",
+      "y": 90
+    },
+    "state=standing,candle_slots=1,facing=south": {
+      "model": "decorum:block/candle_holder/standing/1_candle",
+      "y": 180
+    },
+    "state=standing,candle_slots=1,facing=west": {
+      "model": "decorum:block/candle_holder/standing/1_candle",
+      "y": 270
+    },
+    "state=standing,candle_slots=2,facing=north": {
+      "model": "decorum:block/candle_holder/standing/2_candles"
+    },
+    "state=standing,candle_slots=2,facing=east": {
+      "model": "decorum:block/candle_holder/standing/2_candles",
+      "y": 90
+    },
+    "state=standing,candle_slots=2,facing=south": {
+      "model": "decorum:block/candle_holder/standing/2_candles",
+      "y": 180
+    },
+    "state=standing,candle_slots=2,facing=west": {
+      "model": "decorum:block/candle_holder/standing/2_candles",
+      "y": 270
+    },
+    "state=standing,candle_slots=3,facing=north": {
+      "model": "decorum:block/candle_holder/standing/3_candles"
+    },
+    "state=standing,candle_slots=3,facing=east": {
+      "model": "decorum:block/candle_holder/standing/3_candles",
+      "y": 90
+    },
+    "state=standing,candle_slots=3,facing=south": {
+      "model": "decorum:block/candle_holder/standing/3_candles",
+      "y": 180
+    },
+    "state=standing,candle_slots=3,facing=west": {
+      "model": "decorum:block/candle_holder/standing/3_candles",
+      "y": 270
+    },
+    "state=standing,candle_slots=4,facing=north": {
+      "model": "decorum:block/candle_holder/standing/4_candles"
+    },
+    "state=standing,candle_slots=4,facing=east": {
+      "model": "decorum:block/candle_holder/standing/4_candles",
+      "y": 90
+    },
+    "state=standing,candle_slots=4,facing=south": {
+      "model": "decorum:block/candle_holder/standing/4_candles",
+      "y": 180
+    },
+    "state=standing,candle_slots=4,facing=west": {
+      "model": "decorum:block/candle_holder/standing/4_candles",
+      "y": 270
+    },
+    "state=mounted,candle_slots=1,facing=north": {
+      "model": "decorum:block/candle_holder/mounted/1_candle"
+    },
+    "state=mounted,candle_slots=1,facing=east": {
+      "model": "decorum:block/candle_holder/mounted/1_candle",
+      "y": 90
+    },
+    "state=mounted,candle_slots=1,facing=south": {
+      "model": "decorum:block/candle_holder/mounted/1_candle",
+      "y": 180
+    },
+    "state=mounted,candle_slots=1,facing=west": {
+      "model": "decorum:block/candle_holder/mounted/1_candle",
+      "y": 270
+    },
+    "state=mounted,candle_slots=2,facing=north": {
+      "model": "decorum:block/candle_holder/mounted/2_candles"
+    },
+    "state=mounted,candle_slots=2,facing=east": {
+      "model": "decorum:block/candle_holder/mounted/2_candles",
+      "y": 90
+    },
+    "state=mounted,candle_slots=2,facing=south": {
+      "model": "decorum:block/candle_holder/mounted/2_candles",
+      "y": 180
+    },
+    "state=mounted,candle_slots=2,facing=west": {
+      "model": "decorum:block/candle_holder/mounted/2_candles",
+      "y": 270
+    },
+    "state=mounted,candle_slots=3,facing=north": {
+      "model": "decorum:block/candle_holder/mounted/3_candles"
+    },
+    "state=mounted,candle_slots=3,facing=east": {
+      "model": "decorum:block/candle_holder/mounted/3_candles",
+      "y": 90
+    },
+    "state=mounted,candle_slots=3,facing=south": {
+      "model": "decorum:block/candle_holder/mounted/3_candles",
+      "y": 180
+    },
+    "state=mounted,candle_slots=3,facing=west": {
+      "model": "decorum:block/candle_holder/mounted/3_candles",
+      "y": 270
+    },
+    "state=mounted,candle_slots=4,facing=north": {
+      "model": "decorum:block/candle_holder/mounted/4_candles"
+    },
+    "state=mounted,candle_slots=4,facing=east": {
+      "model": "decorum:block/candle_holder/mounted/4_candles",
+      "y": 90
+    },
+    "state=mounted,candle_slots=4,facing=south": {
+      "model": "decorum:block/candle_holder/mounted/4_candles",
+      "y": 180
+    },
+    "state=mounted,candle_slots=4,facing=west": {
+      "model": "decorum:block/candle_holder/mounted/4_candles",
+      "y": 270
+    },
+    "state=hanging,candle_slots=1,facing=north": {
+      "model": "decorum:block/candle_holder/hanging/1_candle"
+    },
+    "state=hanging,candle_slots=1,facing=east": {
+      "model": "decorum:block/candle_holder/hanging/1_candle",
+      "y": 90
+    },
+    "state=hanging,candle_slots=1,facing=south": {
+      "model": "decorum:block/candle_holder/hanging/1_candle",
+      "y": 180
+    },
+    "state=hanging,candle_slots=1,facing=west": {
+      "model": "decorum:block/candle_holder/hanging/1_candle",
+      "y": 270
+    },
+    "state=hanging,candle_slots=2,facing=north": {
+      "model": "decorum:block/candle_holder/hanging/2_candles"
+    },
+    "state=hanging,candle_slots=2,facing=east": {
+      "model": "decorum:block/candle_holder/hanging/2_candles",
+      "y": 90
+    },
+    "state=hanging,candle_slots=2,facing=south": {
+      "model": "decorum:block/candle_holder/hanging/2_candles",
+      "y": 180
+    },
+    "state=hanging,candle_slots=2,facing=west": {
+      "model": "decorum:block/candle_holder/hanging/2_candles",
+      "y": 270
+    },
+    "state=hanging,candle_slots=3,facing=north": {
+      "model": "decorum:block/candle_holder/hanging/3_candles"
+    },
+    "state=hanging,candle_slots=3,facing=east": {
+      "model": "decorum:block/candle_holder/hanging/3_candles",
+      "y": 90
+    },
+    "state=hanging,candle_slots=3,facing=south": {
+      "model": "decorum:block/candle_holder/hanging/3_candles",
+      "y": 180
+    },
+    "state=hanging,candle_slots=3,facing=west": {
+      "model": "decorum:block/candle_holder/hanging/3_candles",
+      "y": 270
+    },
+    "state=hanging,candle_slots=4,facing=north": {
+      "model": "decorum:block/candle_holder/hanging/4_candles"
+    },
+    "state=hanging,candle_slots=4,facing=east": {
+      "model": "decorum:block/candle_holder/hanging/4_candles",
+      "y": 90
+    },
+    "state=hanging,candle_slots=4,facing=south": {
+      "model": "decorum:block/candle_holder/hanging/4_candles",
+      "y": 180
+    },
+    "state=hanging,candle_slots=4,facing=west": {
+      "model": "decorum:block/candle_holder/hanging/4_candles",
+      "y": 270
+    }
+  }
+}

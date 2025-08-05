@@ -1,7 +1,17 @@
 // 1.21.5	-999999999-01-01T00:00:00	Decorum (indev)/Model Definitions
 4cc15fd07deeec672ff98622d48b20a383a50feb assets/decorum/items/bamboo_flower_pot.json
-5c5a671c00bef0cf695f4aa4c95339c0550dc5eb assets/decorum/items/candle_tray.json
+1f0a0676770c155f1abe3ab30f90caf2560c767e assets/decorum/items/candle_holder.json
+e5e8bdc829b0c8ebdf0a9bf85917ed5c21392704 assets/decorum/items/firefly_lantern.json
 0820e90d29e778562696c1c6085f23f676154ad6 assets/decorum/items/item_stand.json
+2b6a1f5b9384ba4e05d3344e0a9db3b65c1fcf2f assets/decorum/items/lesbian_pride_candle.json
+8572ad29aa61b0a5be6164ed76e200fec9f9930f assets/decorum/items/pride_candle.json
+ef4d140d7cd0c8f883619d0a65cc586742d66649 assets/decorum/items/torch_holder.json
+bf85440676241a5719e79e548f357f13923c9c88 assets/decorum/items/trans_pride_candle.json
 e19f14dc6cc595d48fc7f69ffd09dade82c98302 assets/decorum/models/item/bamboo_flower_pot.json
-565cfc0a2a581a2d552aa9867fc8a0315cbe0f54 assets/decorum/models/item/candle_tray.json
+67817ce33fc68e8bc4e60953b4bdb8cf9410cda8 assets/decorum/models/item/candle_holder.json
+8bb4d6e17c04c14f57119a7e5c127051e48bd7a4 assets/decorum/models/item/firefly_lantern.json
 bb55b29dd4d1091fae79d8a7077042ab8b595704 assets/decorum/models/item/item_stand.json
+1bedc1426f6d8b652a16ed3121db96f30044fedc assets/decorum/models/item/lesbian_pride_candle.json
+7841037941722537322c4c2d9192c8ac93d9ac24 assets/decorum/models/item/pride_candle.json
+49dd6dacae9cdeafc353d7039d2b96c85bc475d0 assets/decorum/models/item/torch_holder.json
+4c77b43c1235d7e736624b36217cc24e6c1bce30 assets/decorum/models/item/trans_pride_candle.json

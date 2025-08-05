@@ -6,8 +6,9 @@ with an empty hand.
 
 Recipe unlocks with an iron ingot.
 
-### Candle Tray
+Implementation progress: mostly finished, with minor quirks
 
+### Torch Holder
 Holds either a candle or torch and acts as a light source equivalent to the held item.
 Useful for decorating fences, posts or walls!
 
@@ -15,6 +16,11 @@ It is compatible with modded candles, such as from Mortar. Candles in the tray c
 Redstone torches in the tray do not output redstone signal (may be changed).
 
 Recipe unlocks with an iron ingot.
+
+Implementation progress: mostly finished, with minor quirks
+
+### Candle Holder
+Implementation progress: work in progress
 
 ### Bamboo Flower Pot
 A bamboo flower pot! Functionally similar to the vanilla flower pot,
@@ -29,3 +35,15 @@ this will be implemented later!)
 Recipe unlocks with a bamboo stick.
 
 Inspiration taken from the resource pack [Fresh Flower Pots](https://modrinth.com/resourcepack/fresh-flower-pots) by BlueHDGaming.
+
+Implementation progress: work in progress
+
+### Firefly Lantern
+A lantern that creates firefly particles in and around it.
+
+Implementation progress: Prototype
+
+### Multi-colour (pride) candles
+Three new candle types that you can use to decorate your home and make it more yours :3
+
+Implementation progress: Finished
