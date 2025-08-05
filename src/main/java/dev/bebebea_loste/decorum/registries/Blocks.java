@@ -68,9 +68,11 @@ public class Blocks {
 				CandleHolder::new,
 				CandleHolder.Settings.create());
 
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(Items.FLOWER_POT, BAMBOO_FLOWER_POT.asItem()));
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(Items.FLOWER_POT, TORCH_HOLDER.asItem()));
+		//ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(Items.FLOWER_POT, CANDLE_HOLDER.asItem()));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(Items.FLOWER_POT, BAMBOO_FLOWER_POT.asItem()));
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(Items.ARMOR_STAND, ITEM_STAND.asItem()));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(Items.SOUL_LANTERN, FIREFLY_LANTERN.asItem()));
 
 		// CANDLES
 		PRIDE_CANDLE = registerBlock(
@@ -89,7 +91,9 @@ public class Blocks {
 				CandleBlock::new,
 				AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE).nonOpaque().strength(0.1F).sounds(BlockSoundGroup.CANDLE).luminance(CandleBlock.STATE_TO_LUMINANCE).pistonBehavior(PistonBehavior.DESTROY));
 		CANDLES.add(PRIDE_CANDLE); CANDLES.add(LESBIAN_PRIDE_CANDLE); CANDLES.add(TRANS_PRIDE_CANDLE);
-
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(Items.CANDLE, PRIDE_CANDLE.asItem()));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(PRIDE_CANDLE, LESBIAN_PRIDE_CANDLE.asItem()));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemGroup) -> itemGroup.addAfter(LESBIAN_PRIDE_CANDLE, TRANS_PRIDE_CANDLE.asItem()));
 	}
 
 	private static Block registerBlock(Boolean register_item, String id_name, Function<AbstractBlock.Settings, Block> blockClassInstance, AbstractBlock.Settings settings) {
