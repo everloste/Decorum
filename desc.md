@@ -39,7 +39,10 @@ Inspiration taken from the resource pack [Fresh Flower Pots](https://modrinth.co
 Implementation progress: work in progress
 
 ### Firefly Lantern
-A lantern that attracts fireflies.
+A special type of lantern that attracts fireflies!
+The amount of fireflies depends on the time of day, with the best time for firefly viewing being around midnight.
+
+Recipe unlocks with an iron ingot.
 
 Implementation progress: Prototype
 

@@ -93,10 +93,7 @@ public class BambooFlowerPot extends BlockWithEntity {
 				else if (newStack.isOf(Items.CACTUS)) {
 					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.CACTUS));
 				}
-				else if (newStack.isOf(Items.MANGROVE_PROPAGULE)) {
-					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.MANGROVE_PROPAGULE));
-				}
-				
+
 				if (newStack.isOf(Items.AZALEA)) {
 					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.AZALEA));
 				}

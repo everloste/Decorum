@@ -9,8 +9,7 @@ public enum FlowerPotState implements StringIdentifiable {
 	CACTUS("cactus"),
 	BAMBOO("bamboo"),
 	AZALEA("azalea"),
-	FLOWERING_AZALEA("flowering_azalea"),
-	MANGROVE_PROPAGULE("mangrove_propagule");
+	FLOWERING_AZALEA("flowering_azalea");
 
 	private final String id;
 

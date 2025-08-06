@@ -49,14 +49,14 @@ public class RecipeProvider extends FabricRecipeProvider {
 						.group("multi_bench")
 						.criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
 						.offerTo(recipeExporter);
-				createShaped(RecipeCategory.DECORATIONS, Blocks.CANDLE_HOLDER.asItem())
-						.pattern("ici")
-						.pattern(" i ")
-						.input('i', Items.IRON_NUGGET)
-						.input('c', Items.IRON_INGOT)
-						.group("multi_bench")
-						.criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
-						.offerTo(recipeExporter);
+//				createShaped(RecipeCategory.DECORATIONS, Blocks.CANDLE_HOLDER.asItem())
+//						.pattern("ici")
+//						.pattern(" i ")
+//						.input('i', Items.IRON_NUGGET)
+//						.input('c', Items.IRON_INGOT)
+//						.group("multi_bench")
+//						.criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+//						.offerTo(recipeExporter);
 
 				createShaped(RecipeCategory.DECORATIONS, Blocks.FIREFLY_LANTERN.asItem())
 						.pattern("iii")
