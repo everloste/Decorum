@@ -33,6 +33,8 @@ public class FlowerPotBlockEntityRenderer implements BlockEntityRenderer<FlowerP
 
 			Vec3d abcd = block.getDefaultState().getModelOffset(entity.getPos());
 
+			BlockModelRenderer abc = blockRenderManager.getModelRenderer();
+
 			if (entity.getWorld() != null) {
 				BlockState state = entity.getWorld().getBlockState(entity.getPos());
 				if (state.isOf(Blocks.BAMBOO_FLOWER_POT)) {
@@ -40,8 +42,6 @@ public class FlowerPotBlockEntityRenderer implements BlockEntityRenderer<FlowerP
 						matrices.push();
 						matrices.translate(-abcd.x + (0.125), 0.25, -abcd.z + (0.125));
 						matrices.scale(0.75F, 0.75F, 0.75F);
-
-						BlockModelRenderer abc = blockRenderManager.getModelRenderer();
 						abc.render(
 								entity.getWorld(),
 								model.getParts(Random.create()),

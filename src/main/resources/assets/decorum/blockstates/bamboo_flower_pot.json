@@ -20,9 +20,6 @@
     },
     "type=flowering_azalea": {
       "model": "decorum:block/bamboo_flower_pot/flowering_azalea"
-    },
-    "type=mangrove_propagule": {
-      "model": "decorum:block/bamboo_flower_pot/mangrove_propagule"
     }
   }
 }

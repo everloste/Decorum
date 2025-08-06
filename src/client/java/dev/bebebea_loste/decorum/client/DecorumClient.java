@@ -24,5 +24,6 @@ public class DecorumClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), Blocks.BAMBOO_FLOWER_POT, Blocks.TORCH_HOLDER, Blocks.ITEM_STAND, Blocks.CANDLE_HOLDER);
 		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(), Blocks.TORCH_HOLDER, Blocks.FIREFLY_LANTERN);
 		ParticleFactoryRegistry.getInstance().register(Particles.FIREFLY_LANTERN, FireflyLanternParticle.Factory::new);
+		//ModelLoadingPlugin.register(this);
 	}
 }
