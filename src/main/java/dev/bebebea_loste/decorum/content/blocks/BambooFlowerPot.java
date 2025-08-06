@@ -3,6 +3,7 @@ package dev.bebebea_loste.decorum.content.blocks;
 import com.mojang.serialization.MapCodec;
 import dev.bebebea_loste.decorum.content.blockEntities.FlowerPotBlockEntity;
 import dev.bebebea_loste.decorum.content.properties.FlowerPotState;
+import dev.bebebea_loste.decorum.registries.Tags;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -65,15 +66,7 @@ public class BambooFlowerPot extends BlockWithEntity {
 		if (blockEntity instanceof FlowerPotBlockEntity) {
 			ItemStack blockStack = blockEntity.getStack();
 
-			if (blockStack.isEmpty() && (playerStack.isIn(ItemTags.SMALL_FLOWERS)
-					|| playerStack.isIn(ItemTags.SAPLINGS)
-					|| playerStack.isOf(Items.FERN)
-					|| playerStack.isOf(Items.BAMBOO)
-					|| playerStack.isOf(Items.CACTUS)
-					|| playerStack.isOf(Items.MANGROVE_PROPAGULE)
-					|| playerStack.isOf(Items.RED_MUSHROOM)
-					|| playerStack.isOf(Items.BROWN_MUSHROOM)
-			)) {
+			if (blockStack.isEmpty() && (playerStack.isIn(Tags.ITEMS_COMPATIBLE_WITH_FLOWER_POT))) {
 				// Set item
 				ItemStack newStack = playerStack.copy();
 				newStack.setCount(1);
@@ -81,7 +74,7 @@ public class BambooFlowerPot extends BlockWithEntity {
 				playerStack.decrement(1);
 
 				// If item is a sapling, make flower pot wide
-				if (newStack.isIn(ItemTags.SAPLINGS)) {
+				if (newStack.isIn(Tags.ITEMS_USING_BIG_FLOWER_POT)) {
 					world.setBlockState(pos, state.with(FLOWER_POT_TYPE, FlowerPotState.BIG));
 				}
 				else if (newStack.isOf(Items.FERN)) {
