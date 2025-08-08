@@ -4,7 +4,6 @@ import dev.bebebea_loste.decorum.content.blockEntities.TorchHolderBlockEntity;
 import dev.bebebea_loste.decorum.registries.Blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.CandleBlock;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.BlockModelRenderer;
@@ -36,10 +35,10 @@ public class TorchHolderRenderer implements BlockEntityRenderer<TorchHolderBlock
 			Block block = Registries.BLOCK.get(Registries.ITEM.getId(entity.getStack().getItem()));
 			BlockState blockState = block.getDefaultState();
 			if (entity.getStack().isIn(ItemTags.CANDLES)) {
-				blockState = blockState.with(CandleBlock.LIT, true);
+				blockState = blockState.with(Properties.LIT, true);
 			}
 
-			BlockStateModel model = blockRenderManager.getModel(block.getDefaultState());
+			BlockStateModel model = blockRenderManager.getModel(blockState);
 
 			Vec3d torch_offset = new Vec3d(0, 0, 0);
 			if (entity.getWorld() != null) {
@@ -47,12 +46,15 @@ public class TorchHolderRenderer implements BlockEntityRenderer<TorchHolderBlock
 				if (state.isOf(Blocks.TORCH_HOLDER)) {
 					if (state.get(MOUNTED)) {
 						torch_offset = switch (state.get(Properties.HORIZONTAL_FACING)) {
-							case NORTH -> new Vec3d(0, 4 / 16f, 5 / 16f);
-							case SOUTH -> new Vec3d(0, 4 / 16f, -5 / 16f);
-							case EAST -> new Vec3d(-5 / 16f, 4 / 16f, 0);
-							case WEST -> new Vec3d(5 / 16f, 4 / 16f, 0);
+							case NORTH -> new Vec3d(0, 3 / 16f, 5 / 16f);
+							case SOUTH -> new Vec3d(0, 3 / 16f, -5 / 16f);
+							case EAST -> new Vec3d(-5 / 16f, 3 / 16f, 0);
+							case WEST -> new Vec3d(5 / 16f, 3 / 16f, 0);
 							default -> torch_offset;
 						};
+//						if (entity.getStack().isIn(ItemTags.CANDLES)) {
+//							torch_offset = torch_offset.add(0, 1/16f, 0);
+//						}
 					}
 				}
 			}

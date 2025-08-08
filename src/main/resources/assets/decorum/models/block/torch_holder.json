@@ -58,7 +58,6 @@
 		{
 			"from": [6, 1, 6],
 			"to": [10, 2, 10],
-			"shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [4, 7, 8, 8], "texture": "#block_texture"},
@@ -72,7 +71,6 @@
 		{
 			"from": [6.5, 0, 6.5],
 			"to": [9.5, 1, 9.5],
-			"shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, -1, 8]},
 			"faces": {
 				"north": {"uv": [7, 4, 10, 5], "texture": "#block_texture"},
@@ -94,7 +92,6 @@
 			"name": "base",
 			"origin": [8, 0, 8],
 			"color": 0,
-			"shade": false,
 			"children": [4, 5]
 		}
 	]

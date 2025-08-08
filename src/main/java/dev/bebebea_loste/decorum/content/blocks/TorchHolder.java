@@ -99,13 +99,13 @@ public class TorchHolder extends BlockWithEntity {
 		if (state.get(MOUNTED)) {
 			switch (state.get(Properties.HORIZONTAL_FACING)) {
 				case NORTH:
-					return new Vec3d(0, 4/16f, 5/16f);
+					return new Vec3d(0, 3/16f, 5/16f);
 				case SOUTH:
-					return new Vec3d(0, 4/16f, -5/16f);
+					return new Vec3d(0, 3/16f, -5/16f);
 				case EAST:
-					return new Vec3d(-5/16f, 4/16f, 0);
+					return new Vec3d(-5/16f, 3/16f, 0);
 				case WEST:
-					return new Vec3d(5/16f, 4/16f, 0);
+					return new Vec3d(5/16f, 3/16f, 0);
 			}
 		}
 		return new Vec3d(0.0, 0.0, 0.0);
@@ -190,7 +190,7 @@ public class TorchHolder extends BlockWithEntity {
 			ItemStack stack = entity.getStack();
 			float f = random.nextFloat();
 
-			Vec3d vec3d = new Vec3d(pos.getX() + 0.5d, pos.getY() + 0.8125f, pos.getZ() + 0.5d);
+			Vec3d vec3d = new Vec3d(pos.getX() + 0.5d, pos.getY() + 13.5/16f, pos.getZ() + 0.5d);
 			vec3d = vec3d.add(this.getShapeOffset(state));
 
 			if (stack.isIn(ItemTags.CANDLES)) {
